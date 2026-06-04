@@ -1,0 +1,122 @@
+[2026.04.13 16:16:57] Launched version: 6006002, install beta: [FALSE], alpha: 0, debug mode: [FALSE]
+[2026.04.13 16:16:57] Executable dir: C:/Code/ClaraRAGP/telegram/, name: Telegram.exe
+[2026.04.13 16:16:57] Initial working dir: C:/WINDOWS/system32/
+[2026.04.13 16:16:57] Working dir: C:/Code/ClaraRAGP/telegram/
+[2026.04.13 16:16:57] Command line: C:\Code\ClaraRAGP\telegram\Telegram.exe -- tg://resolve/?domain=edstarru
+[2026.04.13 16:16:57] Executable path before check: C:/Code/ClaraRAGP/telegram/Telegram.exe
+[2026.04.13 16:16:57] Logs started
+[2026.04.13 16:16:57] WinRT Supported: [TRUE]
+[2026.04.13 16:16:57] AppUserModelID: Telegram.TelegramDesktop.1bd964abc2a07d0fbd260f7cd533b0c3
+[2026.04.13 16:16:57] Using DirectX compiler 'C:\Code\ClaraRAGP\telegram\modules\x64\d3d\d3dcompiler_47.dll'.
+[2026.04.13 16:16:57] Connecting local socket to Global\0490ac1fd10f4b56a72216ee77924e13-{87A94AB0-E370-4cde-98D3-ACC110C5967D}...
+[2026.04.13 16:16:57] This is the only instance of Telegram, starting server and app...
+[2026.04.13 16:16:57] Moved logging from 'C:/Code/ClaraRAGP/telegram/log_start0.txt' to 'C:/Code/ClaraRAGP/telegram/log.txt'!
+[2026.04.13 16:16:57] Opened 'C:/Code/ClaraRAGP/telegram/tdata/working' for reading, the previous Telegram Desktop launch was not finished properly :( Crash log size: 0
+[2026.04.13 16:16:57] Global devicePixelRatio: 1
+[2026.04.13 16:16:57] QT_DPI_ADJUSTMENT_POLICY: AdjustDpi
+[2026.04.13 16:16:57] Primary screen DPI: 120, Base: 96.
+[2026.04.13 16:16:57] Computed screen scale: 125
+[2026.04.13 16:16:57] DevicePixelRatio: 1
+[2026.04.13 16:16:57] ScreenScale: 125
+[2026.04.13 16:16:57] Media Info: Type Playback, default: {0.0.0.00000000}.{801cead7-8b3f-4082-9ffb-f83444c24115}, list: { "Наушники (Realtek(R) Audio)" <{0.0.0.00000000}.{12dd570d-d9e7-4dad-9b40-bde3d981c9a9}>, "NVIDIA Output (NVIDIA High Definition Audio)" <{0.0.0.00000000}.{1f0d47b9-08e2-4dab-9f5e-ccc295206911}>, "Динамики (Realtek(R) Audio)" <{0.0.0.00000000}.{2965011b-9677-4385-ac82-079f9e83acfe}>, "Динамики (Realtek(R) Audio)" <{0.0.0.00000000}.{47d26d2d-5348-441a-be8e-fd9f85bdf02d}>, "Наушники (Realtek(R) Audio)" <{0.0.0.00000000}.{801cead7-8b3f-4082-9ffb-f83444c24115}>, "NVIDIA Output (NVIDIA High Definition Audio)" <{0.0.0.00000000}.{87b7794a-6326-49cf-b3c3-19aef634cab0}>, "Цифровое аудио (HDMI) (High Definition Audio Device)" <{0.0.0.00000000}.{9e317b27-0b18-4e73-b96b-d68ae908be03}>, "Цифровое аудио (HDMI) (High Definition Audio Device)" <{0.0.0.00000000}.{a9689ea8-36b5-41e8-a25e-69ca455ae471}>, "Динамики (fifine Microphone)" <{0.0.0.00000000}.{fcb23824-c5ac-442c-ba96-de3a1130966c}> }, full list refresh: false
+[2026.04.13 16:16:57] Media Info: Type Capture, default: {0.0.1.00000000}.{5e9a68d4-5a2d-4cd9-b9ba-61b75e8001dd}, list: { "Внутренний разъем  AUX (Realtek(R) Audio)" <{0.0.1.00000000}.{04737ab4-56b6-4d4f-acab-c7dff8fd2933}>, "Внутренний разъем  AUX (NVIDIA High Definition Audio)" <{0.0.1.00000000}.{3fc0409d-65e1-474f-a3f1-a4c3054ee1fb}>, "Внутренний разъем  AUX (NVIDIA High Definition Audio)" <{0.0.1.00000000}.{451ba5f4-f573-4058-8b0a-02b62aeaca3a}>, "Микрофон (Realtek(R) Audio)" <{0.0.1.00000000}.{5e9a68d4-5a2d-4cd9-b9ba-61b75e8001dd}>, "Микрофон (Realtek(R) Audio)" <{0.0.1.00000000}.{90f8a6da-2c2a-4b44-bbb6-cac30fa514c5}>, "Внутренний разъем  AUX (High Definition Audio Device)" <{0.0.1.00000000}.{c431c972-0c83-472b-8a30-e0df318c0ca4}>, "Микрофон (fifine Microphone)" <{0.0.1.00000000}.{c46f3962-f777-48a6-95df-113e723bf040}>, "Стерео микшер (Realtek(R) Audio)" <{0.0.1.00000000}.{eb38c327-018f-4f7e-a97c-3ef81e2b4978}>, "Внутренний разъем  AUX (High Definition Audio Device)" <{0.0.1.00000000}.{f17dd7d8-ba7b-470c-8e6d-64c15f4c7e60}>, "Набор микрофонов (Realtek(R) Audio)" <{0.0.1.00000000}.{f257eb11-7892-48b9-b9f5-18a93e5a10a6}> }, full list refresh: false
+[2026.04.13 16:16:57] Media Info: Type Camera, default: \\?\usb#vid_3277&pid_0029&mi_00#7&18314511&0&0000#{65e8773d-8f56-11d0-a3b9-00a0c9223196}\global, list: { "USB2.0 HD UVC WebCam" <\\?\usb#vid_3277&pid_0029&mi_00#7&18314511&0&0000#{65e8773d-8f56-11d0-a3b9-00a0c9223196}\global> }, full list refresh: true
+[2026.04.13 16:16:57] App Info: reading settings...
+[2026.04.13 16:16:57] App Info: reading encrypted settings...
+[2026.04.13 16:16:57] Lang Info: Loaded cached, keys: 10231
+[2026.04.13 16:16:57] Font: from ':/gui/fonts/OpenSans-Italic.ttf' loaded 'Open Sans'
+[2026.04.13 16:16:57] Font: from ':/gui/fonts/OpenSans-Regular.ttf' loaded 'Open Sans'
+[2026.04.13 16:16:57] Font: from ':/gui/fonts/OpenSans-SemiBold.ttf' loaded 'Open Sans Semibold'
+[2026.04.13 16:16:57] Font: from ':/gui/fonts/OpenSans-SemiBoldItalic.ttf' loaded 'Open Sans Semibold'
+[2026.04.13 16:16:57] Font: from ':/gui/fonts/Vazirmatn-UI-NL-Regular.ttf' loaded 'Vazirmatn UI NL'
+[2026.04.13 16:16:57] Font: from ':/gui/fonts/Vazirmatn-UI-NL-SemiBold.ttf' loaded 'Vazirmatn UI NL SemiBold'
+[2026.04.13 16:16:59] OpenAL Logging Level: (not set)
+[2026.04.13 16:16:59] Screen Reader: inactive
+[2026.04.13 16:16:59] App Info: reading accounts info...
+[2026.04.13 16:16:59] App Info: reading encrypted info...
+[2026.04.13 16:16:59] App Info: reading map...
+[2026.04.13 16:16:59] App Info: reading encrypted map...
+[2026.04.13 16:16:59] App Info: reading encrypted user settings...
+[2026.04.13 16:16:59] App Info: encrypted user settings read.
+[2026.04.13 16:16:59] App Info: reading encrypted mtp data...
+[2026.04.13 16:16:59] MTP Info: read keys, current: 3, to destroy: 0
+[2026.04.13 16:16:59] Map read time: 39
+[2026.04.13 16:16:59] App Info: reading encrypted mtp config...
+[2026.04.13 16:16:59] Export Info: Destroy top bar by controller removal.
+[2026.04.13 16:16:59] OpenGL: Using custom 'gpu_driver_bug_list.json'.
+[2026.04.13 16:17:00] OpenGL Profile: OpenGLES.
+[2026.04.13 16:17:00] OpenGL Renderer: ANGLE (NVIDIA, NVIDIA GeForce RTX 4060 Laptop GPU Direct3D11 vs_5_0 ps_5_0, D3D11-32.0.15.6626)
+[2026.04.13 16:17:00] OpenGL Vendor: Google Inc. (NVIDIA)
+[2026.04.13 16:17:00] OpenGL Version: OpenGL ES 3.0.0 (ANGLE 2.1.10 git hash: e3f59e8d0c3e)
+[2026.04.13 16:17:00] OpenGL Extensions: GL_EXT_texture_type_2_10_10_10_REV, GL_EXT_debug_label, GL_OES_compressed_ETC2_punchthroughA_RGBA8_texture, GL_OES_compressed_EAC_RG11_unsigned_texture, GL_EXT_instanced_arrays, GL_OES_standard_derivatives, GL_AMD_performance_monitor, GL_EXT_texture_format_BGRA8888, GL_ANGLE_copy_texture_3d, GL_EXT_draw_buffers, GL_EXT_discard_framebuffer, GL_NV_shader_noperspective_interpolation, GL_EXT_texture_compression_dxt1, GL_EXT_texture_border_clamp, GL_EXT_base_instance, GL_ANGLE_shader_pixel_local_storage_coherent, GL_CHROMIUM_bind_generates_resource, GL_OES_compressed_ETC2_RGB8_texture, GL_OES_texture_float, GL_OES_compressed_ETC2_sRGB8_alpha8_texture, GL_OES_draw_buffers_indexed, GL_OES_texture_float_linear, GL_OES_compressed_ETC2_punchthroughA_sRGB8_alpha_texture, GL_ANGLE_program_cache_control, GL_EXT_conservative_depth, GL_EXT_texture_compression_bptc, GL_ANGLE_provoking_vertex, GL_OES_compressed_EAC_R11_unsigned_texture, GL_EXT_texture_filter_anisotropic, GL_OES_texture_half_float, GL_ANGLE_texture_compression_dxt5, GL_ANGLE_translated_shader_source, GL_NV_fence, GL_EXT_multisampled_render_to_texture, GL_ANGLE_base_vertex_base_instance, GL_EXT_disjoint_timer_query, GL_EXT_polygon_offset_clamp, , GL_NV_framebuffer_blit, GL_APPLE_clip_distance, GL_OES_packed_depth_stencil, GL_OES_compressed_ETC2_RGBA8_texture, GL_EXT_unpack_subimage, GL_CHROMIUM_sync_query, GL_EXT_robustness, GL_ANGLE_robust_client_memory, GL_EXT_texture_compression_s3tc_srgb, GL_OES_rgb8_rgba8, GL_WEBGL_video_texture, GL_ANGLE_pack_reverse_row_order, GL_EXT_EGL_image_external_wrap_modes, GL_ANGLE_clip_cull_distance, GL_ANGLE_stencil_texturing, GL_NV_pack_subimage, GL_ANGLE_framebuffer_multisample, GL_EXT_texture_norm16, GL_OES_EGL_image, GL_EXT_blend_minmax, GL_ANGLE_framebuffer_blit, GL_ANGLE_get_tex_level_parameter, GL_EXT_frag_depth, GL_OVR_multiview2, GL_NV_EGL_stream_consumer_external, GL_ANGLE_texture_compression_dxt3, GL_EXT_draw_buffers_indexed, GL_OES_shader_multisample_interpolation, GL_OES_compressed_ETC2_sRGB8_texture, GL_OES_EGL_image_external, GL_ANGLE_request_extension, GL_EXT_texture_mirror_clamp_to_edge, GL_ANGLE_renderability_validation, GL_EXT_map_buffer_range, GL_OES_sample_variables, GL_EXT_blend_func_extended, GL_OES_get_program_binary, GL_OVR_multiview, GL_OES_surfaceless_context, GL_ANGLE_lossy_etc_decode, GL_EXT_texture_rg, GL_ANGLE_memory_size, GL_KHR_parallel_shader_compile, GL_ANGLE_instanced_arrays, GL_ANGLE_multiview_multisample, GL_OES_texture_npot, GL_KHR_debug, GL_EXT_multi_draw_indirect, GL_EXT_float_blend, GL_ANGLE_polygon_mode, GL_EXT_shader_texture_lod, GL_OES_compressed_EAC_R11_signed_texture, GL_NV_pixel_buffer_object, GL_OES_depth32, GL_CHROMIUM_lose_context, GL_EXT_color_buffer_half_float, GL_EXT_debug_marker, GL_EXT_draw_elements_base_vertex, GL_EXT_render_snorm, GL_OES_draw_elements_base_vertex, GL_EXT_clip_cull_distance, GL_OES_EGL_image_external_essl3, GL_OES_texture_border_clamp, GL_EXT_clip_control, GL_OES_fbo_render_mipmap, GL_ANGLE_shader_pixel_local_storage, GL_EXT_color_buffer_float, GL_OES_compressed_EAC_RG11_signed_texture, GL_ANGLE_depth_texture, GL_EXT_read_format_bgra, GL_OES_element_index_uint, GL_OES_vertex_array_object, GL_ANGLE_client_arrays, GL_EXT_sRGB, GL_ANGLE_texture_usage, GL_CHROMIUM_bind_uniform_location, GL_ANGLE_texture_multisample, GL_ANGLE_multi_draw, GL_EXT_texture_compression_rgtc, GL_OES_texture_half_float_linear, GL_EXT_occlusion_query_boolean, GL_ANGLE_get_serialized_context_string, GL_CHROMIUM_copy_compressed_texture, GL_EXT_depth_clamp, GL_EXT_texture_storage, GL_OES_mapbuffer, GL_CHROMIUM_copy_texture, GL_ANGLE_base_vertex_base_instance_shader_builtin, GL_OES_depth24, GL_OES_texture_stencil8
+[2026.04.13 16:17:00] EGL Extensions: EGL_EXT_create_context_robustness, EGL_ANGLE_d3d_share_handle_client_buffer, EGL_ANGLE_d3d_texture_client_buffer, EGL_ANGLE_surface_d3d_texture_2d_share_handle, EGL_ANGLE_query_surface_pointer, EGL_ANGLE_window_fixed_size, EGL_ANGLE_keyed_mutex, EGL_ANGLE_surface_orientation, EGL_ANGLE_direct_composition, EGL_ANGLE_windows_ui_composition, EGL_NV_post_sub_buffer, EGL_KHR_create_context, EGL_KHR_image, EGL_KHR_image_base, EGL_KHR_gl_texture_2D_image, EGL_KHR_gl_texture_cubemap_image, EGL_KHR_gl_renderbuffer_image, EGL_KHR_get_all_proc_addresses, EGL_KHR_stream, EGL_KHR_stream_consumer_gltexture, EGL_NV_stream_consumer_gltexture_yuv, EGL_ANGLE_stream_producer_d3d_texture, EGL_ANGLE_create_context_webgl_compatibility, EGL_CHROMIUM_create_context_bind_generates_resource, EGL_CHROMIUM_sync_control, EGL_EXT_pixel_format_float, EGL_KHR_surfaceless_context, EGL_ANGLE_display_texture_share_group, EGL_ANGLE_display_semaphore_share_group, EGL_ANGLE_create_context_client_arrays, EGL_ANGLE_program_cache_control, EGL_ANGLE_robust_resource_initialization, EGL_ANGLE_create_context_extensions_enabled, EGL_ANDROID_blob_cache, EGL_ANDROID_recordable, EGL_ANGLE_image_d3d11_texture, EGL_ANGLE_create_context_backwards_compatible, EGL_KHR_no_config_context, EGL_KHR_create_context_no_error, EGL_KHR_reusable_sync, 
+[2026.04.13 16:17:00] OpenGL: QOpenGLContext created, version: 3.3.
+[2026.04.13 16:17:00] OpenGL: [TRUE] (Window)
+[2026.04.13 16:17:02] Update Info: Starting loading 'C:/Code/ClaraRAGP/telegram/tupdates/tx64upd6007005' from 0 offset.
+[2026.04.13 16:17:02] Update Info: Loading using HTTP from 'https://td.telegram.org/tx64/tx64upd6007005'.
+[2026.04.13 17:02:21] RPC Error: request 88 got fail with code 400, error PEER_ID_INVALID
+[2026.04.13 17:02:21] RPC Error: request 101 got fail with code 400, error USER_NOT_PARTICIPANT
+[2026.04.14 00:09:10] Not Secure Error: bad request answer start (1836345404 1007304300 2036625250)
+[2026.04.14 00:09:11] Not Secure Error: bad request answer start (1836345404 1007304300 2036625250)
+[2026.04.14 00:09:13] Not Secure Error: bad request answer start (1836345404 1007304300 2036625250)
+[2026.04.14 00:09:17] Not Secure Error: bad request answer start (1836345404 1007304300 2036625250)
+[2026.04.14 00:09:25] Not Secure Error: bad request answer start (1836345404 1007304300 2036625250)
+[2026.04.14 00:09:33] Not Secure Error: bad request answer start (1836345404 1007304300 2036625250)
+[2026.04.14 00:09:33] Not Secure Error: bad request answer start (1836345404 1007304300 2036625250)
+[2026.04.14 00:09:34] Not Secure Error: bad request answer start (1836345404 1007304300 2036625250)
+[2026.04.14 00:09:39] Not Secure Error: bad request answer start (1836345404 1007304300 2036625250)
+[2026.04.14 00:09:41] Not Secure Error: bad request answer start (1836345404 1007304300 2036625250)
+[2026.04.14 00:09:41] Not Secure Error: bad request answer start (1836345404 1007304300 2036625250)
+[2026.04.14 00:09:43] Not Secure Error: bad request answer start (1836345404 1007304300 2036625250)
+[2026.04.14 00:09:44] Not Secure Error: bad request answer start (1836345404 1007304300 2036625250)
+[2026.04.14 00:09:48] Not Secure Error: bad request answer start (1836345404 1007304300 2036625250)
+[2026.04.14 00:09:49] Not Secure Error: bad request answer start (1836345404 1007304300 2036625250)
+[2026.04.14 00:09:49] Not Secure Error: bad request answer start (1836345404 1007304300 2036625250)
+[2026.04.14 00:09:49] Not Secure Error: bad request answer start (1836345404 1007304300 2036625250)
+[2026.04.14 00:09:50] Not Secure Error: bad request answer start (1836345404 1007304300 2036625250)
+[2026.04.14 00:09:50] Not Secure Error: bad request answer start (1836345404 1007304300 2036625250)
+[2026.04.14 00:09:52] Not Secure Error: bad request answer start (1836345404 1007304300 2036625250)
+[2026.04.14 00:09:52] Not Secure Error: bad request answer start (1836345404 1007304300 2036625250)
+[2026.04.14 00:09:56] Not Secure Error: bad request answer start (1836345404 1007304300 2036625250)
+[2026.04.14 00:09:56] Not Secure Error: bad request answer start (1836345404 1007304300 2036625250)
+[2026.04.14 00:09:57] Not Secure Error: bad request answer start (1836345404 1007304300 2036625250)
+[2026.04.14 00:09:57] Not Secure Error: bad request answer start (1836345404 1007304300 2036625250)
+[2026.04.14 00:09:58] Not Secure Error: bad request answer start (1836345404 1007304300 2036625250)
+[2026.04.14 00:10:00] Not Secure Error: bad request answer start (1836345404 1007304300 2036625250)
+[2026.04.14 00:10:04] Not Secure Error: bad request answer start (1836345404 1007304300 2036625250)
+[2026.04.14 00:10:05] Not Secure Error: bad request answer start (1836345404 1007304300 2036625250)
+[2026.04.14 00:10:05] Not Secure Error: bad request answer start (1836345404 1007304300 2036625250)
+[2026.04.14 00:10:06] Not Secure Error: bad request answer start (1836345404 1007304300 2036625250)
+[2026.04.14 00:10:08] Not Secure Error: bad request answer start (1836345404 1007304300 2036625250)
+[2026.04.14 00:10:12] Not Secure Error: bad request answer start (1836345404 1007304300 2036625250)
+[2026.04.14 00:10:13] Not Secure Error: bad request answer start (1836345404 1007304300 2036625250)
+[2026.04.14 00:10:13] Not Secure Error: bad request answer start (1836345404 1007304300 2036625250)
+[2026.04.14 00:10:14] Not Secure Error: bad request answer start (1836345404 1007304300 2036625250)
+[2026.04.14 00:10:16] Not Secure Error: bad request answer start (1836345404 1007304300 2036625250)
+[2026.04.14 00:10:20] Not Secure Error: bad request answer start (1836345404 1007304300 2036625250)
+[2026.04.14 00:10:21] Not Secure Error: bad request answer start (1836345404 1007304300 2036625250)
+[2026.04.14 00:10:21] Not Secure Error: bad request answer start (1836345404 1007304300 2036625250)
+[2026.04.14 00:10:22] Not Secure Error: bad request answer start (1836345404 1007304300 2036625250)
+[2026.04.14 00:10:24] Not Secure Error: bad request answer start (1836345404 1007304300 2036625250)
+[2026.04.14 00:10:28] Not Secure Error: bad request answer start (1836345404 1007304300 2036625250)
+[2026.04.14 00:10:29] Not Secure Error: bad request answer start (1836345404 1007304300 2036625250)
+[2026.04.14 00:10:29] Not Secure Error: bad request answer start (1836345404 1007304300 2036625250)
+[2026.04.14 00:10:29] Not Secure Error: bad request answer start (1836345404 1007304300 2036625250)
+[2026.04.14 00:10:30] Not Secure Error: bad request answer start (1836345404 1007304300 2036625250)
+[2026.04.14 00:10:30] Not Secure Error: bad request answer start (1836345404 1007304300 2036625250)
+[2026.04.14 00:10:32] Not Secure Error: bad request answer start (1836345404 1007304300 2036625250)
+[2026.04.14 00:10:32] Not Secure Error: bad request answer start (1836345404 1007304300 2036625250)
+[2026.04.14 00:10:36] Not Secure Error: bad request answer start (1836345404 1007304300 2036625250)
+[2026.04.14 00:10:36] Not Secure Error: bad request answer start (1836345404 1007304300 2036625250)
+[2026.04.14 00:10:37] Not Secure Error: bad request answer start (1836345404 1007304300 2036625250)
+[2026.04.14 00:10:37] Not Secure Error: bad request answer start (1836345404 1007304300 2036625250)
+[2026.04.14 00:10:38] Not Secure Error: bad request answer start (1836345404 1007304300 2036625250)
+[2026.04.14 00:10:40] Not Secure Error: bad request answer start (1836345404 1007304300 2036625250)
+[2026.04.14 00:10:44] Not Secure Error: bad request answer start (1836345404 1007304300 2036625250)
+[2026.04.14 00:10:45] Not Secure Error: bad request answer start (1836345404 1007304300 2036625250)
+[2026.04.14 00:10:45] Not Secure Error: bad request answer start (1836345404 1007304300 2036625250)
+[2026.04.14 00:10:46] Not Secure Error: bad request answer start (1836345404 1007304300 2036625250)
+[2026.04.14 00:10:48] Not Secure Error: bad request answer start (1836345404 1007304300 2036625250)
+[2026.04.14 00:10:52] Not Secure Error: bad request answer start (1836345404 1007304300 2036625250)
+[2026.04.14 00:10:53] Not Secure Error: bad request answer start (1836345404 1007304300 2036625250)
+[2026.04.14 00:10:53] Not Secure Error: bad request answer start (1836345404 1007304300 2036625250)
