@@ -30,13 +30,15 @@ class AIChat(object):
         #print(f"!!! CUDA SUPPORTED: {llama_cpp.llama_supports_gpu_offload()} !!!")
 
         self.model = ChatOllama(
-            model="qwen:latest", #hf.co/mradermacher/gemma-3-12b-it-abliterated-i1-GGUF:Q4_K_M #gemma-4-26B-A4B-it-UD-IQ2_M.gguf
+            model="gemma4:latest", #hf.co/mradermacher/gemma-3-12b-it-abliterated-i1-GGUF:Q4_K_M #gemma-4-26B-A4B-it-UD-IQ2_M.gguf
             temperature=0.7,
             num_ctx=10000,
             num_predict=1024,
             num_thread=8,
             verbose=True,
             num_gpu=99,
+            think=False,
+            enable_thinking=False,
             model_kwargs={
                 "flash_attention": True,
                 "kv_cache_type": "q4_0",
@@ -46,7 +48,7 @@ class AIChat(object):
                 "repeat_penalty": 1.15,
                 "use_mmap": True,
                 "use_mlock": True,
-                # "think": False,
+                "think": False,
                 "enable_thinking": False
             }
         )

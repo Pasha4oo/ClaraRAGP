@@ -37,6 +37,8 @@
     <Compile Include="processors\garbage.py" />
     <Compile Include="processors\message.py" />
     <Compile Include="processors\processor.py" />
+    <Compile Include="processors\tor.py" />
+    <Compile Include="processors\tts.py" />
     <Compile Include="processors\__init__.py" />
     <Compile Include="telegram\handler.py" />
     <Compile Include="ai\chat.py" />

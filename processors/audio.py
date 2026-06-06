@@ -5,6 +5,8 @@ import subprocess
 import vosk
 from pydub import AudioSegment, effects
 
+from processors.tts import TextToSpeech
+
 from logs import logger
 
 from config import DEBUG
@@ -50,6 +52,30 @@ class AudioProcessor(object):
             return None
 
         return await asyncio.to_thread(self._recognize, file_path_wav)
+
+    async def play_audio(self, path_to_audio: str):
+        '''Plays audio using ffplay.exe'''
+        
+        ffplay_exe = os.path.join(
+            os.path.dirname(__file__), 
+            "ffmpeg-2024-07-04-git-03175b587c-full_build", "bin", 
+            "ffplay.exe"
+        )
+
+        command = [ffplay_exe, "-nodisp", "-autoexit", path_to_audio]
+
+        try:
+            process = await asyncio.create_subprocess_exec(
+                *command,
+                stdout=asyncio.subprocess.PIPE,
+                stderr=asyncio.subprocess.PIPE
+            )
+            
+            await process.communicate()
+
+        except Exception as e:
+            logger.error(f"Playback error: {e}", exc_info=True)
+
 
     def _recognize(self, file_path_wav: str) -> str:
         '''Uses VOSK KaldiRecognizer to extract text from audio sources'''

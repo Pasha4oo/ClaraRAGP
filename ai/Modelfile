@@ -1,36 +1,16 @@
-FROM hf.co/mradermacher/gemma-3-12b-it-abliterated-i1-GGUF:Q4_K_M
-PARAMETER num_gpu 35
-ADAPTER ./mmproj-BF16.gguf
+﻿FROM ./gemma-4-26B-A4B-it-UD-IQ2_M.gguf
+#ADAPTER ./gemma-4-26B-A4B-it.mmproj-q8_0.gguf
 
-TEMPLATE """{{- if .System }}<start_of_turn>system
-{{ .System }}<end_of_turn>
-{{- end }}
-{{- range .Messages }}
-<start_of_turn>{{ .Role }}
-{{- if .Content }}{{ .Content }}{{ end }}
-{{- if .ToolCalls }}
-<tool_call>
-{{- range .ToolCalls }}
-{"name": "{{ .Function.Name }}", "arguments": {{ .Function.Arguments }}}
-{{- end }}
-</tool_call>
-{{- end }}<end_of_turn>
-{{- if eq .Role "tool" }}
-<start_of_turn>user
-<tool_response>
-{{ .Content }}
-</tool_response><end_of_turn>
-{{- end }}
-{{- end }}
-<start_of_turn>model
-"""
+PARAMETER temperature 0.7
+PARAMETER top_p 0.95
+PARAMETER top_k 64
+PARAMETER repeat_penalty 1.1
 
-SYSTEM """ 
-When you need to use a tool, you MUST respond ONLY with the JSON inside <tool_call> tags.
-Example: <tool_call>{"name": "my_tool", "arguments": {"key": "value"}}</tool_call>
-Available tools:
-{{- range .Tools }}
-- {{ .Function.Name }}: {{ .Function.Description }}
-  Parameters: {{ .Function.Parameters }}
-{{- end }}
+SYSTEM """Отвечай сразу по существу, БЕЗ использования блоков рассуждений (<|thought|>) и предварительных раздумий. Пиши только финальный ответ."""
+
+TEMPLATE """{{ if .System }}<|im_start|>system
+{{ .System }}<|im_end|>
+{{ end }}{{ if .Prompt }}<|im_start|>user
+{{ .Prompt }}<|im_end|>
+{{ end }}<|im_start|>assistant
 """

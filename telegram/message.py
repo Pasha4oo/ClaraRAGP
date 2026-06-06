@@ -1,8 +1,9 @@
-import asyncio
+﻿import asyncio
 
 from emoji import is_emoji
 from pyrogram import Client, enums
 
+from processors.tts import TextToSpeech
 from processors.message import NaturalMessageProcessor
 from processors.garbage import GarbageDestroyer
 
@@ -12,9 +13,12 @@ class MessageController(object):
         self.garbage_destroyer = GarbageDestroyer()
         self.app = app
 
+        self.tts = TextToSpeech()
+
     async def send_message(self, message: str, sender_id: int):
         """Sends message into saved chat into Telegrams"""
         message = self.garbage_destroyer.destroy_all(message)
+        await self.tts.play_audio(self.tts.tts(message))
         sentences = self.text_processor.split_message(self.text_processor.add_errors_in_message(message, True, 1))
         
         for sentence in sentences:
