@@ -20,7 +20,7 @@ class Censor(object):
         if len(message_without_tools) >= 150 or re.search('[a-ce-zA-CE-Z]', message_without_tools) or await self.exceptions(message_without_tools):
 
             logger.info('Blacklist pattern detected! Reroll')
-            return False
+            return True
 
         return False
 

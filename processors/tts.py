@@ -14,7 +14,7 @@ import socket
 
 class TextToSpeech(object):
     def __init__(self):
-        self.VOICE = "Isabella RU"       #Evdokiya, Isabella RU, Lyudmila
+        self.VOICE = "Lyudmila"       #Evdokiya, Isabella RU, Lyudmila
         self.SAVE_DIR = "downloads"
         self.PLAY = True
 
@@ -26,6 +26,11 @@ class TextToSpeech(object):
         self.tor.session.get('https://speechgen.io/')
         time.sleep(1)
         self.tor.session.get('https://speechgen.io/en/', headers={'Referer': 'https://speechgen.io/'})
+
+    async def say(self, text: str):
+        '''Voices the text'''
+        filepath = await asyncio.to_thread(self.tts, text)
+        await self.play_audio(filepath)
 
     async def play_audio(self, path_to_audio: str):
         '''Plays audio using ffplay.exe'''
@@ -58,7 +63,7 @@ class TextToSpeech(object):
             "lang": "ru-RU", "voice": self.VOICE, "format": "mp3",
             "text": text, "captcha_value": "123456",
             "pp": "400", "ps": "300", "hz": "48000", "speed_type": 1,
-            "bitrate": 64, "channels": 1, "speed": 1, "pitch": 0,
+            "bitrate": 64, "channels": 1, "speed": 1, "pitch": 3,
             "volume": 100, "styledegree": 1, "vocabulary": False,
             "popup_cptch": 0, "style": "whisper", "role": ""
         }

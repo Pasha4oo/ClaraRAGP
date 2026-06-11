@@ -20,7 +20,7 @@ ONLINE/OFFLINE
 If there any options, tries to use ONLINE or OFFLINE analogs of functions
 """
 
-CENSOR_WORDS = ["АНОН", "РУСС", "ПЕРЕВ", "РОСС", "АНГЛ", "США", "ДИСКОР", "ШТАТ", "НЕПОН", "ЯЗЫК", "ВЕРИД", "КРАТК", "25", "*", "24", "КОРОТК", " ЛОЛ", "РОФЛ", "…", "САМ ЗНАЕ", "ДАЛЬШЕ"]
+CENSOR_WORDS = ["АНОН", "РУСС", "ПЕРЕВ", "РОСС", "АНГЛ", "США", "ДИСКОР", "ШТАТ", "НЕПОН", "ЯЗЫК", "ВЕРИД", "КРАТК", "25", "*", "24", "КОРОТК", " ЛОЛ", "РОФЛ", "…", "САМ ЗНАЕ", "ДАЛЬШЕ", "«"]
 
 """
 If censor module detects these parts in any generated text, the text will be regenerated until it does not contain any of them

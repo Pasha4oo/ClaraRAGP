@@ -1,7 +1,9 @@
-﻿from os import path
+﻿from os import path, getpid
 from requests import Session
 
+import sys
 import socket
+import subprocess
 
 from logs import logger
 
@@ -27,6 +29,7 @@ class Tor(object):
         self.cookie = None
         self.sock = None
 
+        self.run()
         self.connect()
 
         self.new_ip()
@@ -34,12 +37,40 @@ class Tor(object):
     def get_ip(self) -> str:
         """Returns IP via httpbin.org"""
         try:
-            return self.session.get('https://httpbin.org/ip', timeout=10).json()['origin']
+            return self.session.get('https://api.ipify.org/', timeout=10).text.strip()
         except Exception:
             logger.error("Unknown ip:", exc_info=True)
 
             return None
 
+    def run(self):
+        tor = path.expandvars(path.join(path.dirname(__file__), "tor", "tor", "tor.exe"))
+        flags = subprocess.CREATE_NO_WINDOW
+
+        if b"tor.exe" not in subprocess.check_output('tasklist /FI "IMAGENAME eq tor.exe"', creationflags=flags):
+            proc = subprocess.Popen([tor], creationflags=flags, stdout=subprocess.PIPE, text=True, errors='ignore')
+            logger.info("Loading tor")
+
+            for line in proc.stdout:
+                if "Bootstrapped 100%" in line:
+                    logger.info("Tor loaded successfully")
+                    break
+            
+            subprocess.run('taskkill /f /fi "WINDOWTITLE eq tor_timer_watcher"', creationflags=flags, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+
+            p_name = path.basename(sys.executable)
+            
+            watcher = f'cmd.exe /k "title tor_timer_watcher && tasklist /FI "PID eq {getpid()}" /NH | find "{getpid()}" && timeout /t 300 /nobreak & tasklist /FI "IMAGENAME eq {p_name}" 2>nul | find "{p_name}" >nul || taskkill /f /im tor.exe & exit"'
+            subprocess.Popen(watcher, creationflags=flags | subprocess.DETACHED_PROCESS)
+
+        else:
+            try:
+                with socket.create_connection(('127.0.0.1', 9050), timeout=1):
+                    logger.info("Tor already loaded")
+
+            except Exception:
+                subprocess.run('taskkill /f /im tor.exe', creationflags=flags, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+                self.run()
 
     def connect(self):
         """Connects to tor"""

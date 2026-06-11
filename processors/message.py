@@ -73,11 +73,14 @@ class NaturalMessageProcessor(object):
 
         message = message.replace('-', '')
         message = message.replace('  ', ' ')
+        message = message.replace('«', ' ')
+        message = message.replace('»', ' ')
 
         message = message.replace('...', '{dots}\n')
         message = message.replace('.', '\n')
         message = message.replace('{dots}', '...')
         message = message.replace('! ', '! \n')
+        message = message.replace(') ', ') \n')
         message = message.replace('??', '\n')
         message = message.replace('? ', '? \n')
         message = replace_emoji(message, replace=lambda chars, data_dict: f"\n{chars}\n")

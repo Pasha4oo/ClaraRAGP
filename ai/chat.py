@@ -36,9 +36,10 @@ class AIChat(object):
             num_predict=1024,
             num_thread=8,
             verbose=True,
-            num_gpu=99,
+            #num_gpu=99,
             think=False,
             enable_thinking=False,
+            reasoning=False,
             model_kwargs={
                 "flash_attention": True,
                 "kv_cache_type": "q4_0",
@@ -79,6 +80,7 @@ class AIChat(object):
             response = ""
             is_bad = False
 
+            corrected_message = message
             corrected_message = self.corrector.correct_message(message)
             corrected_message_with_date_time = f"<time>{message_arrived_date_time}</time> <userId>{userId}</userId> {corrected_message}"
             print(corrected_message_with_date_time)
